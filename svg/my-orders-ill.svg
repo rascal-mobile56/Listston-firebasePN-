@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="95px" viewBox="0 0 74 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>FF1F0440-361C-4B00-91A8-979402B075D0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D6E9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="My-orders" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-orders-empty-state" transform="translate(-151.000000, -136.000000)">
+            <g id="My_orders_ill" transform="translate(152.000000, 137.000000)">
+                <polygon id="Fill-1" fill="#D6E9FF" opacity="0.300000012" points="3.41309091 92.6051077 71.4632727 92.6051077 71.4632727 4.92613846 3.41309091 4.92613846"></polygon>
+                <polygon id="Stroke-2" stroke="#2A86E1" stroke-width="2" opacity="0.300000012" points="3.41309091 92.6051077 71.4632727 92.6051077 71.4632727 4.92613846 3.41309091 4.92613846"></polygon>
+                <polygon id="Fill-4" fill="url(#linearGradient-1)" points="0 0.131916923 0 87.40884 67.5054545 87.40884 67.5054545 19.5546092 47.76 0.131916923"></polygon>
+                <path d="M10,0.131916923 L0,0.131916923 L0,87.40884 L43,87.40884 M54,87.40884 L67.5054545,87.40884 L67.5054545,19.5546092 L47.76,0.131916923 L19,0.131916923" id="Stroke-5" stroke="#2A86E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polygon id="Fill-7" fill="#FFFFFF" points="48.3729455 18.9516831 48.3729455 1.01198308 66.6107636 18.9516831"></polygon>
+                <g id="Group-16" transform="translate(17.454545, 0.320492)">
+                    <polygon id="Stroke-8" stroke="#2A86E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="30.9184 18.6311908 30.9184 0.691490769 49.1562182 18.6311908"></polygon>
+                    <path d="M5.65592727,36.8413777 C5.65592727,39.1470623 4.48647273,41.0156469 3.04429091,41.0156469 C1.60210909,41.0156469 0.432654545,39.1470623 0.432654545,36.8413777 C0.432654545,34.5356931 1.60210909,32.6671085 3.04429091,32.6671085 C4.48647273,32.6671085 5.65592727,34.5356931 5.65592727,36.8413777" id="Fill-10" fill="#2A86E1"></path>
+                    <path d="M32.0984727,36.8413777 C32.0984727,39.1470623 30.9290182,41.0156469 29.4868364,41.0156469 C28.0446545,41.0156469 26.8752,39.1470623 26.8752,36.8413777 C26.8752,34.5356931 28.0446545,32.6671085 29.4868364,32.6671085 C30.9290182,32.6671085 32.0984727,34.5356931 32.0984727,36.8413777" id="Fill-12" fill="#2A86E1"></path>
+                    <path d="M28.4512727,57.2083777 C25.1029091,55.6116392 21.028,54.6716238 16.6287273,54.6716238 C12.2287273,54.6716238 8.15454545,55.6116392 4.80545455,57.2083777" id="Stroke-14" stroke="#2A86E1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,285 @@
+.modal {
+  position: fixed; //absolute;
+  left: 0;
+  top: 0;
+  width: $app_width;
+  height: 100%;
+  background-color: rgba(0,0,0,.9);
+  z-index: 100;
+}
+.modal-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  width: 100%;
+}
+.modal-title {
+  font-size: rem(21);
+  line-height: 1.24;
+  color: #fff;
+  text-align: center;
+  margin-top: rem(25);
+}
+.modal-subtitle {
+  font-size: rem(16);
+  text-align: center;
+  color: #868686;
+  line-height: 1.63;
+}
+
+.modal-too-late {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include box-sizing(border-box);
+  width: rem(325);
+  border-radius: rem(3);
+  background-color: #fff;
+  padding: rem(35) rem(40) rem(55);
+  text-align: center;
+  svg {
+    display: inline-block;
+    width: rem(74);
+    height: rem(75);
+  }
+}
+.modal-too-late-title {
+  margin: rem(28) 0 rem(10);
+  font: #{rem(30)}/#{rem(41)} $nunitosans-bold;
+  color: #637280;
+}
+.modal-too-late-subtitle {
+  margin-bottom: rem(59);
+  font: rem(19) $nunitosans;
+  color: #637280;
+}
+
+
+.modal-let-us-know {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include box-sizing(border-box);
+  width: rem(325);
+  border-radius: rem(3);
+  background-color: #fff;
+  padding: rem(25) rem(20);
+}
+.modal-let-us-know-title {
+  font: rem(24) $nunitosans-bold;
+  text-align: center;
+  color: #637280;
+  margin-bottom: rem(23);
+}
+.modal-radio-block {
+  li {
+    position: relative;
+    &:not(:first-child) {
+      margin-top: rem(15);
+    }
+  }
+  label {
+    display: block;
+    @include box-sizing(border-box);
+    height: rem(55);
+    border-radius: rem(33);
+    font: #{rem(18)}/#{rem(54)} $nunitosans;
+    color: #2a86e1;
+    padding: 0 rem(25);
+  }
+
+  input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    &:not(:checked) {
+      & ~ label{
+        background-color: #fff;
+        border: solid rem(2) #2f87de;
+        font: #{rem(18)}/#{rem(54)} $nunitosans;
+      }
+      & ~ svg {
+        display: none;
+      }
+    }
+    &:checked {
+      & ~ label {
+        background-color: #ebf7ff;
+        border: solid rem(2) #2a86e1;
+        font: #{rem(18)}/#{rem(54)} $nunitosans-bold;
+      }
+      & ~ svg {
+        display: block;
+        position: absolute;
+        right: rem(23);
+        top: rem(22);
+        width: rem(13);
+        height: rem(9);
+      }
+    }
+  }
+}
+.modal-textarea {
+  @include box-sizing(border-box);
+  width: 100%;
+  margin: rem(25) 0;
+  display: block;
+  height: rem(100);
+  border-radius: rem(3);
+  background-color: #fff;
+  border: solid rem(2) rgba(100, 115, 129, 0.46);
+  font: #{rem(18)}/#{1.44} $nunitosans;
+  color: #637280;
+  padding: rem(8) rem(12);
+  resize: none;
+}
+
+//===spinner http://tobiasahlin.com/spinkit/
+.spinner {
+  margin: 0 auto;
+  width: rem(100);//rem(50);
+  height: rem(70);//rem(40);
+  text-align: center;
+  font-size: rem(10);
+
+  &  > div {
+    background-color: #2a86e1;
+    height: 100%;
+    width: rem(12);//rem(6);
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    &:not(:first-child) {
+      margin-left: rem(2);
+    }
+  }
+  .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+       transform: scaleY(1.0);
+       -webkit-transform: scaleY(1.0);
+     }
+}
+//===END spinner
+
+
+.modal2 {
+  position: fixed; //absolute;
+  left: 0;
+  top: 0;
+  width: $app_width;
+  height: 100%;
+  background-color: rgba(#283a4c,.8);
+  z-index: 40;
+}
+.modal2-bottom-msg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  @include box-sizing(border-box);
+  height: rem(50);
+  background-color: #fff;
+  box-shadow: inset 0 rem(1) 0 0 rgba(0, 0, 0, 0.22);
+  font: #{rem(18)}/#{rem(50)} $nunitosans;
+  padding: 0 rem(20);
+  color: #283a4c;
+}
+.modal2-send-block {
+  position: absolute;
+  bottom: rem(66);
+  left: rem(25);
+  width: rem(325);
+  overflow: hidden;
+  border-radius: rem(4);
+  li {
+    &:not(:first-child) {
+      //border-top: rem(1) solid #CFCFCF;
+      a {
+        box-shadow: inset 0 rem(1) 0 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+    a {
+      display: block;
+      height: rem(55);
+      background-color: #fff;
+      font: #{rem(18)}/#{rem(50)} $nunitosans-bold;
+      color: #2a86e1;
+      text-align: center;
+    }
+    &.cancel a {
+      color: #fc694f;
+    }
+  }
+}
+.modal2-question-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(280);
+  border-radius: rem(4);
+  background-color: #fff;
+  border: solid rem(1) #d3d7db;
+  overflow: hidden;
+}
+.modal2-question-msg {
+  font: rem(18)/rem(24) $nunitosans;
+  text-align: center;
+  color: #637280;
+  padding: rem(16) 0 rem(15);
+}
+.modal2-question-btn-block {
+  border-top: solid rem(1) #d3d7db;
+  li {
+    float: left;
+  }
+}
+.modal2-question-btn1, .modal2-question-btn2 {
+  @include box-sizing(border-box);
+  background-color: #fff;
+  display: block;
+  width: rem(140);
+  height: rem(55);
+  font: rem(18) $nunitosans-bold;
+  text-align: center;
+}
+.modal2-question-btn1 {
+  color: #fc694f;
+}
+a.modal2-question-btn1 {
+  line-height: rem(55);
+}
+.modal2-question-btn2 {
+  border-left: solid rem(1) #d3d7db;
+  color: #2a86e1;
+}
+a.modal2-question-btn2 {
+  line-height: rem(55);
+}
