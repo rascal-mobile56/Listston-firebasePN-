@@ -98,11 +98,6 @@ APP.request.loader = function(step){
 
 function APP_START(){
 
-    window.FirebasePlugin.grantPermission();
-    window.FirebasePlugin.hasPermission(function(data){
-        alert(data.isEnabled);
-    });
-
     APP.load_state();
 
     APP.auth = function(email, passwd, success, fail){
@@ -602,21 +597,6 @@ function APP_START(){
 
 document.addEventListener('deviceready', APP_START, false);
 
-FCMPlugin.onTokenRefresh(function(token){
-    alert( token );
-});
-FCMPlugin.getToken(function(token){
-    alert(token);
-});
-FCMPlugin.onNotification(function(data){
-    if(data.wasTapped){
-      //Notification was received on device tray and tapped by the user.
-      alert( JSON.stringify(data) );
-    }else{
-      //Notification was received in foreground. Maybe the user needs to be notified.
-      alert( JSON.stringify(data) );
-    }
-});
 // if(/Mozilla/.test(navigator.userAgent)){
 //     document.dispatchEvent(new Event('deviceready'))
 // }

@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-fcm": {
+            "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.livres.app.dev"
+        }
+    },
+    "dependent_plugins": {}
+}
