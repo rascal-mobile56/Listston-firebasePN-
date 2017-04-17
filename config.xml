@@ -78,7 +78,6 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <plugin name="cordova-plugin-fcm" spec="~2.1.1" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" />
 </widget>
