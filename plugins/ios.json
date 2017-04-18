@@ -12,6 +12,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-fcm": {
+            "PACKAGE_NAME": "com.livres.app.dev"
         }
     },
     "dependent_plugins": {}

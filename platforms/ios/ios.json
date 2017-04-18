@@ -19,18 +19,32 @@
                         {
                             "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FCMPlugin\"><param name=\"ios-package\" value=\"FCMPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
             },
             "*/Entitlements-Debug.plist": {
                 "parents": {
-                    "aps-environment": []
+                    "aps-environment": [
+                        {
+                            "xml": "<string>development</string>",
+                            "count": 1
+                        }
+                    ]
                 }
             },
             "*/Entitlements-Release.plist": {
                 "parents": {
-                    "aps-environment": []
+                    "aps-environment": [
+                        {
+                            "xml": "<string>production</string>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -40,6 +54,9 @@
             "PACKAGE_NAME": "com.livres.app.dev"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-fcm": {
             "PACKAGE_NAME": "com.livres.app.dev"
         }
     },
@@ -52,10 +69,19 @@
             "clobbers": [
                 "window.StatusBar"
             ]
+        },
+        {
+            "id": "cordova-plugin-fcm.FCMPlugin",
+            "file": "plugins/cordova-plugin-fcm/www/FCMPlugin.js",
+            "pluginId": "cordova-plugin-fcm",
+            "clobbers": [
+                "FCMPlugin"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-statusbar": "2.2.3-dev",
-        "cordova-plugin-whitelist": "1.3.2"
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-fcm": "2.1.1"
     }
 }
