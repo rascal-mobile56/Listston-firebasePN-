@@ -81,4 +81,5 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" />
     <plugin name="cordova-plugin-fcm" spec="~2.1.1" />
+    <plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" />
 </widget>
