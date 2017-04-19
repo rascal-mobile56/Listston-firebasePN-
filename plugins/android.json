@@ -7,11 +7,14 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.example.hello"
-        },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.livres.app"
+            "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.livres.app.dev"
+        },
+        "cordova-plugin-fcm": {
+            "PACKAGE_NAME": "com.livres.app.dev"
         }
     },
     "dependent_plugins": {}

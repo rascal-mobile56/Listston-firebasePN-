@@ -80,8 +80,8 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" />
-    <plugin name="cordova-plugin-fcm" spec="https://can2nac:2SnVNw8YR2JG2gjY4dUt@bitbucket.org/can2nac/cordova-plugin-fcm"/>
-    <plugin name="cordova-plugin-fcm-config" spec="https://can2nac:2SnVNw8YR2JG2gjY4dUt@bitbucket.org/can2nac/cordova-plugin-fcm-config.git"/>
-    <!-- <plugin name="cordova-plugin-fcm" spec="~2.1.1" /> -->
+    <!-- <plugin name="cordova-plugin-fcm" spec="https://can2nac:2SnVNw8YR2JG2gjY4dUt@bitbucket.org/can2nac/cordova-plugin-fcm"/>
+    <plugin name="cordova-plugin-fcm-config" spec="https://can2nac:2SnVNw8YR2JG2gjY4dUt@bitbucket.org/can2nac/cordova-plugin-fcm-config.git"/> -->
+    <plugin name="cordova-plugin-fcm" spec="~2.1.1" />
     <!-- <plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" /> -->
 </widget>

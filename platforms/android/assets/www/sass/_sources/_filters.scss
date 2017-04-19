@@ -1,0 +1,196 @@
+.filters-title-block {
+  position: relative;
+  margin-bottom: rem(20);
+}
+.filters-title {
+  font: rem(30) $nunitosans-bold;
+  color: #283a4c;
+}
+.clear-filters-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: rem(8);
+  padding-left: rem(16 + 7);
+  font: #{rem(15)}/#{rem(20)} $nunitosans-bold;
+  color: #fc694f;
+  svg {
+    display: block;
+    width: rem(16);
+    height: rem(16);
+    position: absolute;
+    left: 0;
+    top: rem(0);
+    stroke: #FB6A55;
+  }
+}
+.filters-subtitle {
+  font: #{rem(19)}/#{rem(26)} $nunitosans-bold;
+  color: #283a4c;
+  position: relative;
+  .check-all-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font: #{rem(16)}/#{rem(26)} $nunitosans-bold;
+    color: #2a86e1;
+  }
+}
+.filters-sort-list {
+  margin-bottom: rem(27);
+}
+.filters-sort-list-item {
+  padding: rem(22) 0;
+  &:not(:first-child) {
+    box-shadow: inset 0 rem(1) 0 0 rgba(127, 138, 148, 0.38);
+  }
+  &.price {
+    .filters-sort-list-label {
+      line-height: rem(40);
+    }
+  }
+}
+.filters-sort-list-label {
+  float: left;
+  font: #{rem(18)}/#{rem(35)} $nunitosans;
+  color: #637280;
+}
+.filters-radio {
+  float: right;
+  li {
+    float: left;
+    &:first-child {
+      label {
+        &:before {
+          border-top: rem(8) solid #A0A8B0;
+          border-left: rem(6) solid transparent;
+          border-right: rem(6) solid transparent;
+          margin: rem(-4) 0 0 rem(-6);
+        }
+      }
+    }
+    &:not(:first-child) {
+      margin-left: rem(17);
+      label {
+        &:before {
+          border-bottom: rem(8) solid #A0A8B0;
+          border-left: rem(6) solid transparent;
+          border-right: rem(6) solid transparent;
+          margin: rem(-5) 0 0 rem(-6);
+        }
+      }
+    }
+  }
+  input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    &:not(:checked) {
+      & ~ label{
+        border: rem(2) solid #A6ADB4;
+        background-color: #fff;
+      }
+    }
+    &:checked {
+      & ~ label{
+        background-color: #3980DD;
+        &:before {
+          border-top-color: #fff;
+          border-bottom-color: #fff;
+        }
+      }
+    }
+  }
+  label {
+    display: block;
+    @include box-sizing(border-box);
+    width: rem(35);
+    height: rem(35);
+    position: relative;
+    border-radius: rem(3);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
+}
+.filters-price-range {
+  float: right;
+  li {
+    float: left;
+  }
+  span {
+    display: block;
+    font: #{rem(19)}/#{rem(40)} $nunitosans;
+    color: #637280;
+    padding: 0 rem(10);
+    float: left;
+  }
+}
+.filters-input {
+  display: block;
+  float: left;
+  font: rem(18) $nunitosans;
+  width: rem(64);
+  height: rem(40);
+  text-align: center;
+  @include box-sizing(border-box);
+  border-radius: rem(3);
+  border: solid rem(2) #A6ADB4;
+  color: #637280;
+  &.error {
+    background-color: rgba(250, 105, 85, 0.07);
+    border-color: #fb6a55;
+    color: #df4e35;
+    @include input-placeholder { color: #df4e35; }
+  }
+}
+
+.filters-subject-list {
+
+}
+.filters-subject-list-item {
+  margin-top: rem(22);
+  position: relative;
+  padding-left: rem(48);
+  input[type="checkbox"] {
+    display: none;
+    &:not(:checked) {
+      + .filters-subject-list-checkbox-label {
+        .checkbox-off {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: rem(-2);
+          width: rem(24);
+          height: rem(24);
+        }
+        .checkbox-on {
+          display: none;
+        }
+      }
+    }
+    &:checked {
+      + .filters-subject-list-checkbox-label {
+        .checkbox-on {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: rem(-2);
+          width: rem(24);
+          height: rem(24);
+        }
+        .checkbox-off {
+          display: none;
+        }
+      }
+    }
+  }
+  .filters-subject-list-checkbox-label {
+    display: inline-block;
+    font: #{rem(18)}/#{rem(22)} $nunitosans;
+    color: #637280;
+    @include user-select(none);
+  }
+}

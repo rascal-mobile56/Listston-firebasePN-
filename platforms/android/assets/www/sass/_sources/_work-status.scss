@@ -1,0 +1,162 @@
+.txt-block1 {
+  padding: rem(24) rem(25) rem(51);
+  font: #{rem(18)}/#{1.44} $nunitosans;
+  color: #637280;
+}
+.current-status-block {
+  padding: rem(20) rem(25) rem(30) rem(106);
+  &.not-available {
+    background-color: #99a9b9;;
+    .current-status-title {
+      color: #fff;
+    }
+    .current-status-checkbox {
+      label {
+        color: #fff;
+      }
+    }
+    .current-status-msg {
+      color: #fff;
+    }
+  }
+  &.available {
+    background-color: #e1effd;
+    .current-status-title {
+      color: #637280;
+    }
+    .current-status-checkbox {
+      label {
+        color: #637280;
+      }
+    }
+    .current-status-msg {
+      color: #637280;
+    }
+  }
+}
+.current-status-title {
+  font-size: rem(16);
+  opacity: 0.8;
+}
+.current-status-msg {
+  font-size: rem(18);
+  line-height: 1.39;
+}
+
+.current-status-checkbox {
+  position: relative;
+  input {
+    display: none;
+    &:not(:checked) {
+      + label {
+        &:before{
+          border: rem(2) solid #5E6772;
+        }
+        &:after {
+          left: rem(-72);
+          background-color: #637280;
+        }
+
+      }
+    }
+    &:checked {
+      + label {
+        &:before{
+          border: rem(2) solid #69AAEA;
+        }
+        &:after {
+          left: rem(-52);
+          background-color: #2A86E1;
+        }
+
+      }
+    }
+  }
+  label {
+    display: block;
+    position: relative;
+    font: rem(30) $nunitosans-bold;
+    color: #637280;
+    margin: rem(3) 0 rem(6);
+    &:before, &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before{
+      @include box-sizing(border-box);
+      width: rem(53);
+      height: rem(33);
+      border-radius: rem(25);
+      background-color: #fff;
+      left: rem(-75);
+      top: 0;
+    }
+    &:after {
+      width: rem(27);
+      height: rem(27);
+      top: rem(3);
+      border-radius: 50%;
+      @include box-shadow(rem(0) rem(2) rem(4) rem(0) rgba(0,0,0,.3));
+    }
+  }
+}
+.current-status-countdown {
+  font: rem(35) $nunitosans-bold;
+  color: #637280;
+  margin: rem(22) 0 rem(10);
+}
+
+
+.status-selector {
+  background-color: #f6f8fa;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+}
+.status-selector-title {
+  font: rem(24) $nunitosans-bold;
+  text-align: center;
+  color: #637280;
+  margin-bottom: rem(25);
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.objblink {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+  -webkit-animation-timing-function: ease-in-out;
+
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: blink;
+  -moz-animation-timing-function: ease-in-out;
+}
