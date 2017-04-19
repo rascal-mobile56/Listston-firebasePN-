@@ -15,6 +15,7 @@ import eLogin from './login.vue'
 import eWorkStatus from './workstatus.vue'
 import eMore from './more.vue'
 import eOnBoard from './onboard.vue'
+import * as fcm from './fcm.js'
 
 "use strict"
 
@@ -212,6 +213,13 @@ function APP_START(){
             this.$on('fetch', function(folder){
                 self['fetch_' + folder]();
             } );
+            if(window.FCMPlugin){
+                this.$once('app_ready', function(){
+                    fcm.onTokenRefresh(this.onTokenRefresh);
+                    FCMPlugin.getToken(this.onTokenRefresh);
+                    fcm.onNotification(this.onNotification);
+                });
+            }
         },
         methods:{
             fetch_available:function(fn){
