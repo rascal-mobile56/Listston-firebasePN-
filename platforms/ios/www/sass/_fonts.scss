@@ -1,7 +1,0 @@
-@include font-face("nunitosans-regular", font-files("nunitosans-regular.woff","nunitosans-regular.ttf","nunitosans-regular.svg"),"nunitosans-regular.eot");
-@include font-face("nunitosans-bold", font-files("nunitosans-bold.woff","nunitosans-bold.ttf","nunitosans-bold.svg"),"nunitosans-bold.eot");
-@include font-face("nunitosans-black", font-files("nunitosans-black.woff","nunitosans-black.ttf","nunitosans-black.svg"),"nunitosans-black.eot");
-
-$nunitosans: 'nunitosans-regular', sans-serif;
-$nunitosans-bold: 'nunitosans-bold', sans-serif;
-$nunitosans-black: 'nunitosans-black', sans-serif;
